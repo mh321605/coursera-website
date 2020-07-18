@@ -1,0 +1,82 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h3{
+  float: right;
+  background-color: red;
+  margin: 0;
+  width: 100px;
+  text-align: center;
+}
+#ch{
+  background-color: #ff6666
+}
+
+#b{
+  background-color: #33cccc
+}
+
+#sh{
+  background-color: #669999
+}
+
+p {;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+  margin-top: 30px;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    border: 1px;
+  margin-right: auto;
+  margin-left: auto;
+	margin:1%;
+  background-color: #336699;
+  width: 31.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px;
+  margin-right: auto;
+  margin-left: auto;
+	margin:1%;
+  background-color: #336699;
+  }
+  
+  .col-md-6 {
+    width: 48%;
+  }
+  
+  .col-md-12 {
+    width: 98%;
+  }
+}
+
+@media (max-width: 767px){
+	.col-lt{
+		float: left;
+    border: 1px;
+  margin-right: auto;
+  margin-left: auto;
+	margin:1%;
+	background-color: #336699;
+	width: 98%;
+	}
+}
