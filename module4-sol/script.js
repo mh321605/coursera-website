@@ -41,8 +41,8 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-for (name in names) {
-  var c = names[name].charAt(0);
+for (var name of names) {
+  var c = name.charAt(0);
   c=c.toLowerCase();
 
   // STEP 11:
@@ -59,9 +59,10 @@ for (name in names) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
+  window.name=name
   if (c==='j') {
-    byeSpeaker.speak();
+    byeSpeaker.speak(name);
   } else {
-    helloSpeaker.speak();
+    helloSpeaker.speak(name);
   }
 }
